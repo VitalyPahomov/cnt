@@ -1,8 +1,8 @@
 ﻿using System;
 
-namespace VitApp
+namespace Milk_factory
 {
-    class Program
+    class Program_cnt
     {
         static void Main(string[] args)
         {

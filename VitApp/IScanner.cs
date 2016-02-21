@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace VitApp
+namespace Milk_factory
 {
     public interface IScanner
     {

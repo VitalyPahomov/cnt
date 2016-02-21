@@ -1,4 +1,4 @@
-﻿namespace VitApp
+﻿namespace Milk_factory
 {
     public struct VariableRange
     {

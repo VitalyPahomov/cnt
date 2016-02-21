@@ -2,7 +2,7 @@
 using System.Collections;
 using System.Collections.Generic;
 
-namespace VitApp
+namespace Milk_factory
 {
     public class DumbScanner : IScanner, IEnumerable
     {
