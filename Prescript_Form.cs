@@ -1189,11 +1189,11 @@ namespace Milk_factory
             clear_cointer();
             //prescript_cointer();
 
-            grid_array(5);
-            border_for_recurse(10);
-            grid_array(1);
-            border_for_recurse(4);
-            grid_array(0.5);
+            //grid_array(5);
+            //border_for_recurse(10);
+            //grid_array(1);
+            //border_for_recurse(4);
+            //grid_array(0.5);
             //border_for_recurse(2);
             //grid_array(0.1);
             //border_for_recurse(0.5);
@@ -1204,6 +1204,26 @@ namespace Milk_factory
             //grid_array(0.005);
             //border_for_recurse(0.002);
             //grid_array(0.001);
+
+            
+            IScanner scanner = new DumbScanner(1)
+            {
+                { "Бухло", 10, 20 },
+                { "Закусь", 5, 25 },
+                { "Шлаки", 15, 50 },
+                //{ "P4", 100, 200 }
+            };
+            
+            
+            //int cnt = 0;
+            
+            scanner.Run(vars =>
+            {
+                richTextBox16.Text += "{0} = {1}" + vars[0].Name + vars[0].Value + "\n";
+                richTextBox16.Text += "{0} = {2}" + vars[1].Name + vars[1].Value + "\n";
+                richTextBox16.Text += "{0} = {3}" + vars[2].Name + vars[2].Value + "\n";
+            });
+            
             label2.Text = "Себeстоимость " + Math.Round((set_min_and_cost() / 100 * to_dbl(richTextBox1.Text)), 2) + " стаканчика " + Math.Round((set_min_and_cost() / 100 * to_dbl(richTextBox1.Text) * 0.15 / 100), 2) + "\n";
 
         }
